@@ -8,8 +8,11 @@ const {
   getMe
 } = require("../controller/userController")
 
+const {protect} =require('../middlewere/authMiddlewere')
+
+
 
 router.post('/', registerUser)
 router.post('/login', loginUser)
-router.post('/me', getMe)
+router.post('/me',protect, getMe)
 module.exports = router;
