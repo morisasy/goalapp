@@ -1,13 +1,31 @@
 import React from 'react';
-//import logo from './logo.svg';
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route
+} from 'react-router-dom'
+
+import  Dashboard from './pages/Dashboard'
+import  Login from './pages/Login'
+import  Register from './pages/Register'
+import  Header from './components/Header'
 //import { Counter } from './features/counter/Counter';
 //import './App.css';
-// npm run client 
+// npm run client
 const App = () => {
   return (
-    <div>
-      <h1>My App</h1>
-    </div>
+    <>
+        <Router>
+            <div className="container">
+                <Header />
+                <Routes>
+                    <Route path="/"  element = {<Dashboard />} />
+                    <Route path="/Login"  element = {<Login />} />
+                    <Route path="/Register"  element = {<Register />} />
+                </Routes>
+            </div>
+        </Router>
+    </>
   )
 }
 
