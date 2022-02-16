@@ -12,6 +12,8 @@ import  Header from './components/Header'
 //import { Counter } from './features/counter/Counter';
 //import './App.css';
 // npm run client
+// npm i -D concurrently
+
 const App = () => {
   return (
     <>
