@@ -1,7 +1,12 @@
 import React, { useState}  from 'react'
 import {
+  useSelector,
+  useDispatch
+} from 'react-redux'
+import {
   FaUser
 } from 'react-icons/fa'
+
 
 
 function Register() {

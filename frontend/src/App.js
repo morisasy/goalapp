@@ -13,6 +13,8 @@ import  Header from './components/Header'
 //import './App.css';
 // npm run client
 // npm i -D concurrently
+// npm i axios react-toastify
+
 
 const App = () => {
   return (
